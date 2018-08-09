@@ -15,40 +15,86 @@
               </div>
     <div class="main-carousel">
     <div class="carousel-cell" id="carousel-cell0">
-        <div class="container" style="background-image:url(images/pexels-photo-462024.jpeg)">
-            <h2>Lorem Ipsum</h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
     </div>
     <div class="carousel-cell" id="carousel-cell3">
-        <div class="container" style="background-image:url(images/sea-water-ocean-horizon.jpg)">
-            <h2>porttitor odio</h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
     </div>
     <div class="carousel-cell" id="carousel-cell4">
-        <div class="container" style="background-image:url(images/pexels-photo-5.jpeg)">
-            <h2>Fusce tellus</h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
     </div>
     <div class="carousel-cell" id="carousel-cell5">
-        <div class="container" style="background-image:url(images/pexels-photo-4.jpeg)">
-            <h2>Fusce a nunc</h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
         
     </div>
     <div class="carousel-cell" id="carousel-cell6">
-        <div class="container" style="background-image:url(images/pexels-photo-3.jpeg)">
-            <h2>Quisque eu</h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
     </div>
     <div class="carousel-cell" id="carousel-cell7">
-        <div class="container" style="background-image:url(images/pexels-photo-2.jpeg)">
-            <h2>Vivamus sem </h2>
+        <div class="container">
+            <h2>{{tilte}}</h2>
+            {{description}}
         </div>
     </div>
 </div>
 <div class="progress-bar"></div>
-    <script  src="vendor/flickity.pkgd.min.js "></script>
-    <script  src="vendor/hash.js "></script>
+<script>
+        var carusData = [
+            {
+                image: 'one', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            },
+            {
+                image: 'two', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            
+            },
+            {
+                image: 'three', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            
+            }
+            {
+                image: 'four', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            
+            }
+            {
+                image: 'five', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            
+            }
+            {
+                image: 'six', 
+                title: 'Lorem ipsum.',
+                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+            
+            }
+        ];
+        </script>
+    <script  src="vendor/flickity.pkgd.min.js"></script>
+    <script  src="vendor/hash.js"></script>
+    <script  src="vendor/mustache.js"></script>
     <script  src="js/script.js"></script>
 </body>
 

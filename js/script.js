@@ -1,5 +1,11 @@
 'use strict';
 (function() {
+    for(var i = 0; i < carusData.length; i++){
+        
+    }
+
+
+
   var elem = document.querySelector('.main-carousel');
     var flkty = new Flickity( elem, {
       // options
