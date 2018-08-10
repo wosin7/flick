@@ -8,86 +8,58 @@
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
     <link rel="stylesheet" href="css/style.css">
 
+    <script id="tempcarusl" type="x-tmpl-mustache">
+            <div class="carousel-cell" id="carousel-cell{{image}}">
+            <div class="container">
+                    <h2>{{tilte}}</h2>
+                    {{{description}}}
+                </div>
+            </div>
+    </script>
+
 </head>
 <body>
         <div class="button-group">
                 <button class="button">reset</button>
               </div>
-    <div class="main-carousel">
-    <div class="carousel-cell" id="carousel-cell0">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
+    <div class="main-carousel" id="result">
     </div>
-    <div class="carousel-cell" id="carousel-cell3">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
-    </div>
-    <div class="carousel-cell" id="carousel-cell4">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
-    </div>
-    <div class="carousel-cell" id="carousel-cell5">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
-        
-    </div>
-    <div class="carousel-cell" id="carousel-cell6">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
-    </div>
-    <div class="carousel-cell" id="carousel-cell7">
-        <div class="container">
-            <h2>{{tilte}}</h2>
-            {{description}}
-        </div>
-    </div>
-</div>
-<div class="progress-bar"></div>
-<script>
+    <div class="progress-bar"></div>
+    <script>
         var carusData = [
             {
                 image: 'one', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem one ipsum.',
+                description: '<p>Lorem one ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
                 image: 'two', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem two ipsum.',
+                description: '<p>Lorem two ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             
             },
             {
                 image: 'three', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem three ipsum.',
+                description: '<p>Lorem three ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             
-            }
+            },
             {
                 image: 'four', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem four ipsum.',
+                description: '<p>Lorem four ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             
-            }
+            },
             {
                 image: 'five', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem five ipsum.',
+                description: '<p>Lorem five ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             
-            }
+            },
             {
                 image: 'six', 
-                title: 'Lorem ipsum.',
-                description: <p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>
+                title: 'Lorem six ipsum.',
+                description: '<p>Lorem six ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             
             }
         ];

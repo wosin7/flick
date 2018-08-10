@@ -1,7 +1,11 @@
 'use strict';
 (function() {
+    var tpl = document.getElementById('tempcarusl').innerHTML;
+    var results = document.getElementById('result');
+
     for(var i = 0; i < carusData.length; i++){
-        
+        var generator = Mustache.render(tpl, carusData[i]);
+        results.insertAdjacentHTML('beforeend', generator);
     }
 
 
