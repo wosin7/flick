@@ -41,26 +41,31 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+//mapy
 window.initMap = function(){
   var cord = [];
-  for (i=0; i<carusData.length; i++){
-    cord.push({lat: carusData[i].cords.lat, lng: carusData[i].cords.lng});
-  }
+  var mark = [];
   //var la = carusData[0].cords.lat;
   //var lon = carusData[0].cords.lng;
-  console.log(typeof cord);
-  console.log(cord[1]);
+  // console.log(typeof mark);
+  //console.log(marker);
   
   // The location of Uluru
-  var uluru = cord[0];
+var uluru = {lat: carusData[0].cords.lat, lng: carusData[0].cords.lng};
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 4, center: uluru});
   // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-  var marker2 = new google.maps.Marker({position: cord[1], map: map});
+  for (i=0; i<carusData.length; i++){
+    cord.push({lat: carusData[i].cords.lat, lng: carusData[i].cords.lng});
+   // mark[i] = new google.maps.Marker({position: cord[i], map: map});
+   var marker = new google.maps.Marker({position: cord[i], map: map});
+  }
+  //var marker = new google.maps.Marker({position: uluru, map: map});
+  /* var marker2 = new google.maps.Marker({position: cord[1], map: map});
   var marker3 = new google.maps.Marker({position: cord[2], map: map});
   var marker4 = new google.maps.Marker({position: cord[3], map: map});
   var marker5 = new google.maps.Marker({position: cord[4], map: map});
+  console.log(marker5); */
 }
 })();
