@@ -25,41 +25,73 @@
     <div class="main-carousel" id="result">
     </div>
     <div class="progress-bar"></div>
+    <h2>Mapa</h2>
+    <div id="map"></div>
     <script>
         var carusData = [
             {
                 image: 'one', 
                 title: 'Lorem one ipsum.',
-                description: '<p>Lorem one ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem one ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 52.344,
+                        lng: 11.036
+                    }
             },
             {
                 image: 'two', 
                 title: 'Lorem two ipsum.',
-                description: '<p>Lorem two ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem two ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 44.0220,
+                        lng: 12.003
+                    }
             
             },
             {
                 image: 'three', 
                 title: 'Lorem three ipsum.',
-                description: '<p>Lorem three ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem three ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 54.111,
+                        lng: 15.222
+                    }
             
             },
             {
                 image: 'four', 
                 title: 'Lorem four ipsum.',
-                description: '<p>Lorem four ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem four ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 9.000,
+                        lng: 44.222
+                    }
             
             },
             {
                 image: 'five', 
                 title: 'Lorem five ipsum.',
-                description: '<p>Lorem five ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem five ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 15.222,
+                        lng: 55.222
+                    }
             
             },
             {
                 image: 'six', 
                 title: 'Lorem six ipsum.',
-                description: '<p>Lorem six ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+                description: '<p>Lorem six ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>',
+                cords: 
+                    {
+                        lat: 22.754,
+                        lng: 9.222
+                    }
             
             }
         ];
@@ -68,6 +100,8 @@
     <script  src="vendor/hash.js"></script>
     <script  src="vendor/mustache.js"></script>
     <script  src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUjpOCMJPQ85QYFtW63yi9TjFqz74g5zA&callback=initMap"></script>
+
 </body>
 
 </html>
